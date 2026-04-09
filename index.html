@@ -3,7 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yelied Pachay | Portafolio</title>
+
+  <title>Yelied Pachay | Desarrolladora Web Junior en Madrid</title>
+  <meta
+    name="description"
+    content="Portafolio de Yelied Pachay, desarrolladora web junior en formación en Madrid. Proyectos en HTML, CSS, JavaScript y Java orientados a prácticas y primeras oportunidades en desarrollo web."
+  />
+  <meta
+    name="keywords"
+    content="Yelied Pachay, desarrolladora web junior, programadora junior, portafolio web, HTML, CSS, JavaScript, Java, GitHub, prácticas programación, desarrollo web Madrid"
+  />
+  <meta name="author" content="Yelied Pachay" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:title" content="Yelied Pachay | Desarrolladora Web Junior" />
+  <meta
+    property="og:description"
+    content="Portafolio profesional con proyectos de HTML, CSS, JavaScript y Java enfocados en desarrollo web junior."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yelied25.github.io/" />
+
+  <link rel="canonical" href="https://yelied25.github.io/" />
+
   <style>
     * {
       margin: 0;
@@ -12,154 +34,264 @@
       font-family: Arial, sans-serif;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
-      background: linear-gradient(to bottom, #fff7fb, #fdf2f8);
-      color: #2d1b2e;
+      background: #f7f8fa;
+      color: #1f2937;
       line-height: 1.6;
     }
 
     header {
       text-align: center;
-      padding: 60px 20px 40px;
-      background: white;
+      padding: 80px 20px 60px;
+      background: #ffffff;
+      border-bottom: 1px solid #e5e7eb;
     }
 
-    header h1 {
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    h1 {
       font-size: 2.8rem;
-      margin-bottom: 10px;
-      color: #d14d8b;
+      margin-bottom: 18px;
+      color: #111827;
     }
 
-    header p {
-      font-size: 1.1rem;
-      color: #555;
-      max-width: 700px;
-      margin: 0 auto 20px;
+    .subtitle {
+      max-width: 760px;
+      margin: 0 auto 14px;
+      font-size: 1.18rem;
+      color: #374151;
+    }
+
+    .description {
+      max-width: 760px;
+      margin: 0 auto 28px;
+      font-size: 1.05rem;
+      color: #4b5563;
     }
 
     .btn {
       display: inline-block;
       text-decoration: none;
-      background: #d14d8b;
-      color: white;
-      padding: 12px 22px;
-      border-radius: 30px;
+      background: #2563eb;
+      color: #ffffff;
+      padding: 13px 24px;
+      border-radius: 10px;
       font-weight: bold;
-      margin-top: 10px;
+      transition: 0.2s ease;
+    }
+
+    .btn:hover {
+      background: #1d4ed8;
     }
 
     section {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 60px 20px;
+      padding: 70px 20px;
+    }
+
+    .section-light {
+      background: #ffffff;
+    }
+
+    .section-soft {
+      background: #f9fafb;
     }
 
     h2 {
       text-align: center;
       font-size: 2rem;
-      margin-bottom: 30px;
-      color: #b83280;
+      margin-bottom: 24px;
+      color: #111827;
     }
 
-    .about, .contact {
-      text-align: center;
-      max-width: 750px;
+    .section-text {
+      max-width: 820px;
       margin: 0 auto;
+      text-align: center;
+      color: #4b5563;
+      font-size: 1.05rem;
+    }
+
+    .section-text p {
+      margin-bottom: 14px;
+    }
+
+    .tech-list {
+      margin-top: 18px;
+      font-weight: bold;
+      color: #374151;
     }
 
     .projects {
+      max-width: 1100px;
+      margin: 0 auto;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
     }
 
     .card {
-      background: white;
-      border-radius: 18px;
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 16px;
       padding: 24px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
     }
 
     .card h3 {
+      font-size: 1.2rem;
       margin-bottom: 12px;
-      color: #d14d8b;
+      color: #111827;
     }
 
     .card p {
-      color: #555;
-      margin-bottom: 15px;
+      color: #4b5563;
+      margin-bottom: 16px;
     }
 
     .card a {
       text-decoration: none;
-      color: #b83280;
+      color: #2563eb;
       font-weight: bold;
+    }
+
+    .card a:hover {
+      text-decoration: underline;
     }
 
     footer {
       text-align: center;
-      padding: 25px;
+      padding: 28px 20px;
+      background: #ffffff;
+      border-top: 1px solid #e5e7eb;
+      color: #6b7280;
       font-size: 0.95rem;
-      color: #666;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      .subtitle {
+        font-size: 1.05rem;
+      }
+
+      .description,
+      .section-text {
+        font-size: 1rem;
+      }
+
+      header {
+        padding: 60px 20px 50px;
+      }
+
+      section {
+        padding: 55px 20px;
+      }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>👩‍💻 Yelied Pachay</h1>
-    <p>
-      Desarrolladora junior en formación. Estoy construyendo proyectos web
-      para aprender HTML, CSS y JavaScript mientras me preparo para conseguir prácticas como programadora.
-    </p>
-    <a class="btn" href="https://github.com/yelied25" target="_blank">Ver mi GitHub</a>
+    <div class="container">
+      <h1>Yelied Pachay</h1>
+      <p class="subtitle">
+        Desarrolladora web junior en formación con interés en frontend y en la creación de interfaces claras, funcionales y bien estructuradas.
+      </p>
+      <p class="description">
+        Actualmente desarrollo proyectos prácticos en HTML, CSS, JavaScript y Java para fortalecer mi base técnica y prepararme para oportunidades de prácticas en desarrollo web.
+      </p>
+      <a class="btn" href="https://github.com/yelied25" target="_blank">Ver GitHub</a>
+    </div>
   </header>
 
-  <section>
-    <h2>Sobre mí</h2>
-    <div class="about">
-      <p>
-        Soy una futura desarrolladora con interés en crear páginas web bonitas,
-        funcionales y bien estructuradas. Actualmente estoy aprendiendo programación
-        paso a paso y este portafolio irá creciendo con mis proyectos.
-      </p>
-    </div>
-  </section>
-
-  <section>
-    <h2>Mis proyectos</h2>
-    <div class="projects">
-      <div class="card">
-        <h3>Hola Mundo</h3>
-        <p>Mi primer repositorio para empezar a practicar programación y familiarizarme con GitHub.</p>
-        <a href="https://github.com/yelied25/HolaMundo" target="_blank">Ver proyecto</a>
-      </div>
-
-      <div class="card">
-        <h3>Mis proyectos</h3>
-        <p>Repositorio donde iré subiendo ejercicios, prácticas y pequeños proyectos de programación.</p>
-        <a href="https://github.com/yelied25/Mis-proyectos" target="_blank">Ver proyecto</a>
-      </div>
-
-      <div class="card">
-        <h3>Próximo proyecto</h3>
-        <p>Aquí añadiré un nuevo proyecto web con HTML, CSS y JavaScript para seguir mejorando mi portafolio.</p>
-        <a href="https://github.com/yelied25" target="_blank">Ver GitHub</a>
+  <section class="section-light">
+    <div class="container">
+      <h2>Sobre mí</h2>
+      <div class="section-text">
+        <p>
+          Soy una desarrolladora junior en proceso de formación con interés en el desarrollo web y en seguir construyendo una base sólida tanto en estructura de código como en presentación visual.
+        </p>
+        <p>
+          Mi objetivo es incorporarme a una oportunidad de prácticas donde pueda seguir aprendiendo, aportar compromiso y continuar creciendo dentro del entorno del desarrollo de software.
+        </p>
       </div>
     </div>
   </section>
 
-  <section>
-    <h2>Contacto</h2>
-    <div class="contact">
-      <p>Puedes encontrarme en GitHub para seguir mi progreso y ver los proyectos que iré publicando.</p>
-      <a class="btn" href="https://github.com/yelied25" target="_blank">Ir a mi perfil</a>
+  <section class="section-soft">
+    <div class="container">
+      <h2>Tecnologías</h2>
+      <div class="section-text">
+        <p>
+          Estas son las tecnologías y herramientas con las que estoy trabajando actualmente:
+        </p>
+        <p class="tech-list">
+          HTML · CSS · JavaScript · Java · Git · GitHub
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-light">
+    <div class="container">
+      <h2>Proyectos</h2>
+      <div class="projects">
+        <div class="card">
+          <h3>Repositorio de ejercicios de lógica</h3>
+          <p>
+            Colección de ejercicios orientados a reforzar la lógica de programación y la resolución de problemas como parte de mi aprendizaje.
+          </p>
+          <a href="https://github.com/yelied25/Mis-proyectos" target="_blank">Ver repositorio</a>
+        </div>
+
+        <div class="card">
+          <h3>Primeros ejercicios en Java</h3>
+          <p>
+            Prácticas iniciales centradas en conceptos básicos de programación, estructura de código y familiarización con Java.
+          </p>
+          <a href="https://github.com/yelied25" target="_blank">Ver GitHub</a>
+        </div>
+
+        <div class="card">
+          <h3>Próximo proyecto frontend</h3>
+          <p>
+            Próximamente añadiré un proyecto web completo con HTML, CSS y JavaScript enfocado en interfaz, estructura y experiencia de usuario.
+          </p>
+          <a href="https://github.com/yelied25" target="_blank">Ver GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-soft">
+    <div class="container">
+      <h2>Contacto</h2>
+      <div class="section-text">
+        <p>
+          Puedes consultar mi perfil de GitHub para seguir la evolución de mis proyectos y próximos desarrollos.
+        </p>
+        <p>
+          Estoy construyendo este portafolio de forma progresiva mientras avanzo en mi formación como desarrolladora.
+        </p>
+        <a class="btn" href="https://github.com/yelied25" target="_blank">Ir a mi GitHub</a>
+      </div>
     </div>
   </section>
 
   <footer>
-    © 2026 Yelied Pachay | Portafolio de desarrolladora junior
+    © 2026 Yelied Pachay | Portafolio de desarrolladora web junior
   </footer>
 
 </body>
 </html>
+
